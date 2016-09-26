@@ -15,6 +15,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+//        let itemStore = EbayItemStore()
+//        let items = itemStore.fetchEbayItems { items in
+//            print("items: \(items)")
+//        }
         // Override point for customization after application launch.
         return true
     }

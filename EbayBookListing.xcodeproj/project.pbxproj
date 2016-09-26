@@ -9,6 +9,12 @@
 /* Begin PBXBuildFile section */
 		65EB00091D996CA30015DD7B /* EbayBookListingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65EB00081D996CA30015DD7B /* EbayBookListingTests.swift */; };
 		65EB00141D996CA30015DD7B /* EbayBookListingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65EB00131D996CA30015DD7B /* EbayBookListingUITests.swift */; };
+		65EB00231D996CC40015DD7B /* EbayItem.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 65EB00211D996CC40015DD7B /* EbayItem.xcdatamodeld */; };
+		65EB002D1D996D860015DD7B /* EbayApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65EB002C1D996D860015DD7B /* EbayApi.swift */; };
+		65EB00311D996EF50015DD7B /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65EB00301D996EF50015DD7B /* CoreDataStack.swift */; };
+		65EB00351D9989760015DD7B /* EbayItemStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65EB00341D9989760015DD7B /* EbayItemStore.swift */; };
+		65EB00381D998A870015DD7B /* EbayItem+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65EB00361D998A870015DD7B /* EbayItem+CoreDataClass.swift */; };
+		65EB00391D998A870015DD7B /* EbayItem+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65EB00371D998A870015DD7B /* EbayItem+CoreDataProperties.swift */; };
 		65EBFFF41D996CA20015DD7B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65EBFFF31D996CA20015DD7B /* AppDelegate.swift */; };
 		65EBFFF61D996CA20015DD7B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65EBFFF51D996CA20015DD7B /* ViewController.swift */; };
 		65EBFFF91D996CA20015DD7B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65EBFFF71D996CA20015DD7B /* Main.storyboard */; };
@@ -40,6 +46,12 @@
 		65EB000F1D996CA30015DD7B /* EbayBookListingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EbayBookListingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		65EB00131D996CA30015DD7B /* EbayBookListingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EbayBookListingUITests.swift; sourceTree = "<group>"; };
 		65EB00151D996CA30015DD7B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		65EB00221D996CC40015DD7B /* EbayItem.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = EbayItem.xcdatamodel; sourceTree = "<group>"; };
+		65EB002C1D996D860015DD7B /* EbayApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EbayApi.swift; path = ../EbayApi.swift; sourceTree = "<group>"; };
+		65EB00301D996EF50015DD7B /* CoreDataStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		65EB00341D9989760015DD7B /* EbayItemStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EbayItemStore.swift; sourceTree = "<group>"; };
+		65EB00361D998A870015DD7B /* EbayItem+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "EbayItem+CoreDataClass.swift"; path = "../EbayItem+CoreDataClass.swift"; sourceTree = "<group>"; };
+		65EB00371D998A870015DD7B /* EbayItem+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "EbayItem+CoreDataProperties.swift"; path = "../EbayItem+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		65EBFFF01D996CA20015DD7B /* EbayBookListing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EbayBookListing.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		65EBFFF31D996CA20015DD7B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		65EBFFF51D996CA20015DD7B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -116,11 +128,17 @@
 			isa = PBXGroup;
 			children = (
 				65EBFFF31D996CA20015DD7B /* AppDelegate.swift */,
-				65EBFFF51D996CA20015DD7B /* ViewController.swift */,
-				65EBFFF71D996CA20015DD7B /* Main.storyboard */,
 				65EBFFFA1D996CA20015DD7B /* Assets.xcassets */,
-				65EBFFFC1D996CA20015DD7B /* LaunchScreen.storyboard */,
+				65EB00301D996EF50015DD7B /* CoreDataStack.swift */,
+				65EB002C1D996D860015DD7B /* EbayApi.swift */,
+				65EB00211D996CC40015DD7B /* EbayItem.xcdatamodeld */,
+				65EB00361D998A870015DD7B /* EbayItem+CoreDataClass.swift */,
+				65EB00371D998A870015DD7B /* EbayItem+CoreDataProperties.swift */,
+				65EB00341D9989760015DD7B /* EbayItemStore.swift */,
 				65EBFFFF1D996CA20015DD7B /* Info.plist */,
+				65EBFFFC1D996CA20015DD7B /* LaunchScreen.storyboard */,
+				65EBFFF71D996CA20015DD7B /* Main.storyboard */,
+				65EBFFF51D996CA20015DD7B /* ViewController.swift */,
 			);
 			path = EbayBookListing;
 			sourceTree = "<group>";
@@ -278,8 +296,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65EB00311D996EF50015DD7B /* CoreDataStack.swift in Sources */,
+				65EB00391D998A870015DD7B /* EbayItem+CoreDataProperties.swift in Sources */,
 				65EBFFF61D996CA20015DD7B /* ViewController.swift in Sources */,
+				65EB00351D9989760015DD7B /* EbayItemStore.swift in Sources */,
+				65EB00381D998A870015DD7B /* EbayItem+CoreDataClass.swift in Sources */,
 				65EBFFF41D996CA20015DD7B /* AppDelegate.swift in Sources */,
+				65EB00231D996CC40015DD7B /* EbayItem.xcdatamodeld in Sources */,
+				65EB002D1D996D860015DD7B /* EbayApi.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -532,6 +556,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		65EB00211D996CC40015DD7B /* EbayItem.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				65EB00221D996CC40015DD7B /* EbayItem.xcdatamodel */,
+			);
+			currentVersion = 65EB00221D996CC40015DD7B /* EbayItem.xcdatamodel */;
+			path = EbayItem.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 65EBFFE81D996CA20015DD7B /* Project object */;
 }
