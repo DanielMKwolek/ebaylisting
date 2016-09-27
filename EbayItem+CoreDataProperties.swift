@@ -19,6 +19,6 @@ extension EbayItem {
     @NSManaged public var title: String
     @NSManaged public var thumbnailKey: String?
     @NSManaged public var author: String?
-    @NSManaged public var imageUrl: String?
+    @NSManaged public var imageUrl: NSURL?
 
 }

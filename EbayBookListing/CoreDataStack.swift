@@ -41,14 +41,14 @@ class CoreDataStack {
         return coordinator
     }()
 
-    lazy var mainQueueContext: NSManagedObjectContext = {
+    public lazy var mainQueueContext: NSManagedObjectContext = {
         let moc = NSManagedObjectContext(concurrencyType: .mainQueueConcurrencyType)
         moc.persistentStoreCoordinator = self.persistentStoreCoordinator
         moc.name = "Main Queue Context (UI)"
         return moc
     }()
     
-    func saveChanges() throws {
+    public func saveChanges() throws {
         var saveError: Error?
         mainQueueContext.performAndWait {
             if self.mainQueueContext.hasChanges {

@@ -11,5 +11,13 @@ import CoreData
 
 
 public class EbayItem: NSManagedObject {
-
+    
+    
+    
+    init(title: String, author: String?, imageURL: NSURL?) {
+        super.init(entity: EbayItem.entity(), insertInto:  )
+        self.title = title
+        self.author = author
+        self.imageUrl = imageURL
+    }
 }

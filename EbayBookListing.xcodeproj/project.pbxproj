@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		65014BE51D9AD19400D5A99C /* EbayImageStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65014BE41D9AD19400D5A99C /* EbayImageStore.swift */; };
 		65EB00091D996CA30015DD7B /* EbayBookListingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65EB00081D996CA30015DD7B /* EbayBookListingTests.swift */; };
 		65EB00141D996CA30015DD7B /* EbayBookListingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65EB00131D996CA30015DD7B /* EbayBookListingUITests.swift */; };
 		65EB00231D996CC40015DD7B /* EbayItem.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 65EB00211D996CC40015DD7B /* EbayItem.xcdatamodeld */; };
@@ -40,6 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		65014BE41D9AD19400D5A99C /* EbayImageStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EbayImageStore.swift; sourceTree = "<group>"; };
 		65EB00041D996CA30015DD7B /* EbayBookListingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EbayBookListingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		65EB00081D996CA30015DD7B /* EbayBookListingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EbayBookListingTests.swift; sourceTree = "<group>"; };
 		65EB000A1D996CA30015DD7B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -135,6 +137,7 @@
 				65EB00361D998A870015DD7B /* EbayItem+CoreDataClass.swift */,
 				65EB00371D998A870015DD7B /* EbayItem+CoreDataProperties.swift */,
 				65EB00341D9989760015DD7B /* EbayItemStore.swift */,
+				65014BE41D9AD19400D5A99C /* EbayImageStore.swift */,
 				65EBFFFF1D996CA20015DD7B /* Info.plist */,
 				65EBFFFC1D996CA20015DD7B /* LaunchScreen.storyboard */,
 				65EBFFF71D996CA20015DD7B /* Main.storyboard */,
@@ -304,6 +307,7 @@
 				65EBFFF41D996CA20015DD7B /* AppDelegate.swift in Sources */,
 				65EB00231D996CC40015DD7B /* EbayItem.xcdatamodeld in Sources */,
 				65EB002D1D996D860015DD7B /* EbayApi.swift in Sources */,
+				65014BE51D9AD19400D5A99C /* EbayImageStore.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -529,6 +533,7 @@
 				65EB001A1D996CA30015DD7B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		65EB001B1D996CA30015DD7B /* Build configuration list for PBXNativeTarget "EbayBookListingTests" */ = {
 			isa = XCConfigurationList;
@@ -537,6 +542,7 @@
 				65EB001D1D996CA30015DD7B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		65EB001E1D996CA30015DD7B /* Build configuration list for PBXNativeTarget "EbayBookListingUITests" */ = {
 			isa = XCConfigurationList;
@@ -545,6 +551,7 @@
 				65EB00201D996CA30015DD7B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		65EBFFEB1D996CA20015DD7B /* Build configuration list for PBXProject "EbayBookListing" */ = {
 			isa = XCConfigurationList;

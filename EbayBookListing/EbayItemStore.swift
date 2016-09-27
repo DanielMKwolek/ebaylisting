@@ -8,3 +8,17 @@
 
 import Foundation
 import CoreData
+
+enum ItemResult {
+    case Success([EbayItem])
+    case Failure(Error)
+}
+
+enum ItemError: Error {
+    case ItemCreationError
+}
+
+class EbayItemStore {
+    static var mainDataStack = CoreDataStack.init(modelName: "EbayItemStore")
+    
+}
